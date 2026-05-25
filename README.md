@@ -6,7 +6,7 @@ La página web está optimizada con un diseño moderno (Dark Mode con acentos az
 
 ---
 
-## 🚀 Sobre Mí
+## Sobre Mí
 
 Soy **Tecnólogo en Desarrollo de Software** con un enfoque profesional hacia el **Desarrollo Backend**. Mi pasión radica en construir lógica sólida, gestionar bases de datos eficientes y estructurar arquitecturas de código limpias y escalables. 
 
@@ -14,7 +14,7 @@ Además, cuento con una base sólida de **6 semestres en Diseño Industrial**, l
 
 ---
 
-## 🛠️ Tecnologías y Herramientas Utilizadas
+## Tecnologías y Herramientas Utilizadas
 
 ### **Frontend & Diseño**
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
