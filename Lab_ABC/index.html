@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Challenge</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>ABC Challenge</h1>
+    <span class="badge">Letras vistas: <strong id="contador">0</strong></span>
+  </header>
+
+  <div class="filters">
+    <button onclick="filtrar('vocales')">Vocales</button>
+    <button onclick="filtrar('todas')">Todas</button>
+  </div>
+
+  <main class="container">
+    <section class="cards">
+
+      <div class="card" data-tipo="vocal" onclick="voltear(this)">
+        <div class="card-frente"><h1>A</h1></div>
+        <div class="card-dorso">
+          <img src="./images/a-aguacate.jpg" alt="Aguacate">
+          <h3>Aguacate</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>B</h1></div>
+        <div class="card-dorso">
+          <img src="./images/b-banano.jpg" alt="Banano">
+          <h3>Banano</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>C</h1></div>
+        <div class="card-dorso">
+          <img src="./images/c-carro.jpg" alt="Carro">
+          <h3>Carro</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>D</h1></div>
+        <div class="card-dorso">
+          <img src="./images/d-dado.jpg" alt="Dado">
+          <h3>Dado</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="vocal" onclick="voltear(this)">
+        <div class="card-frente"><h1>E</h1></div>
+        <div class="card-dorso">
+          <img src="./images/e-elefante.jpg" alt="Elefante">
+          <h3>Elefante</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>F</h1></div>
+        <div class="card-dorso">
+          <img src="./images/f-foca.jpg" alt="Foca">
+          <h3>Foca</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>G</h1></div>
+        <div class="card-dorso">
+          <img src="./images/g-gato.jpg" alt="Gato">
+          <h3>Gato</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>H</h1></div>
+        <div class="card-dorso">
+          <img src="./images/h-huevo.jpg" alt="Huevo">
+          <h3>Huevo</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="vocal" onclick="voltear(this)">
+        <div class="card-frente"><h1>I</h1></div>
+        <div class="card-dorso">
+          <img src="./images/i-iglesia.png" alt="Iglesia">
+          <h3>Iglesia</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>J</h1></div>
+        <div class="card-dorso">
+          <img src="./images/j-jarra.jpg" alt="Jarra">
+          <h3>Jarra</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>K</h1></div>
+        <div class="card-dorso">
+          <img src="./images/k-karate.jpg" alt="Karate">
+          <h3>Karate</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>L</h1></div>
+        <div class="card-dorso">
+          <img src="./images/l-lampara.webp" alt="Lampara">
+          <h3>Lampara</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>M</h1></div>
+        <div class="card-dorso">
+          <img src="./images/m-mesa.jpg" alt="Mesa">
+          <h3>Mesa</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>N</h1></div>
+        <div class="card-dorso">
+          <img src="./images/n-niña.jpg" alt="Niña">
+          <h3>Niña</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>Ñ</h1></div>
+        <div class="card-dorso">
+          <img src="./images/ñ-ñame.webp" alt="Ñame">
+          <h3>Ñame</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="vocal" onclick="voltear(this)">
+        <div class="card-frente"><h1>O</h1></div>
+        <div class="card-dorso">
+          <img src="./images/O-Oso.avif" alt="Oso">
+          <h3>Oso</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>P</h1></div>
+        <div class="card-dorso">
+          <img src="./images/Perro.jpg" alt="Perro">
+          <h3>Perro</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>Q</h1></div>
+        <div class="card-dorso">
+          <img src="./images/Q-quesoo.jpg" alt="Queso">
+          <h3>Queso</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>R</h1></div>
+        <div class="card-dorso">
+          <img src="./images/r-raton.jpg" alt="Raton">
+          <h3>Raton</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>S</h1></div>
+        <div class="card-dorso">
+          <img src="./images/s-silla.jpeg" alt="Silla">
+          <h3>Silla</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>T</h1></div>
+        <div class="card-dorso">
+          <img src="./images/t-tigre.avif" alt="Tigre">
+          <h3>Tigre</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="vocal" onclick="voltear(this)">
+        <div class="card-frente"><h1>U</h1></div>
+        <div class="card-dorso">
+          <img src="./images/u-uva.jpg" alt="Uva">
+          <h3>Uva</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>V</h1></div>
+        <div class="card-dorso">
+          <img src="./images/v-vaca.jpg" alt="Vaca">
+          <h3>Vaca</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>W</h1></div>
+        <div class="card-dorso">
+          <img src="./images/w-WAFFLE.jpg" alt="Waffle">
+          <h3>Waffle</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>X</h1></div>
+        <div class="card-dorso">
+          <img src="./images/x-xilofono.jpg" alt="Xilofono">
+          <h3>Xilofono</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>Y</h1></div>
+        <div class="card-dorso">
+          <img src="./images/y-yoyo.jpg" alt="Yoyo">
+          <h3>Yoyo</h3>
+        </div>
+      </div>
+
+      <div class="card" data-tipo="consonante" onclick="voltear(this)">
+        <div class="card-frente"><h1>Z</h1></div>
+        <div class="card-dorso">
+          <img src="./images/z-zorro.jpg" alt="Zorro">
+          <h3>Zorro</h3>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="team">
+      <h2>Equipo de Rescate</h2>
+      <p>Nathaly Pulido</p>
+      <p>Yessica Maria Gonzalez</p>
+      <p>Angie Vanessa Gamboa Rivas</p>
+      <p>Jhony David Moreno</p>
+    </footer>
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

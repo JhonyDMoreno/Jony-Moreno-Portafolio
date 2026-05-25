@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6ff;
+}
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #ff6363, #857dff);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background: rgba(255,255,255,0.25);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+}
+
+/* BOTONES */
+.filters {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.filters button {
+  background: #b568d8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.filters button:hover {
+  background: #e04f62;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+/* TARJETAS — contenedor con perspectiva para el efecto 3D */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  height: 200px;
+  cursor: pointer;
+  /* perspective va en el padre para que el hijo gire en 3D */
+  perspective: 800px;
+}
+
+/* Wrapper interno que gira */
+.card-frente,
+.card-dorso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;        /* oculta la cara de atrás cuando gira */
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.6s ease;
+}
+
+/* Para que frente y dorso se superpongan */
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  border-radius: 20px;
+}
+
+/* FRENTE: letra grande */
+.card-frente {
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-frente h1 {
+  font-size: 4rem;
+  color: #6c63ff;
+  margin: 0;
+}
+
+/* DORSO: imagen + palabra */
+.card-dorso {
+  background: #e04f62;
+  color: white;
+  transform: rotateY(180deg);         /* empieza girado, invisible */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-dorso img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.15);
+  padding: 4px;
+}
+
+.card-dorso h3 {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+/* Clase que JavaScript agrega: gira la card completa */
+.card.volteada {
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  filter: brightness(1.03);
+}
+
+/* FOOTER */
+.team {
+  margin-top: 3rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+}
